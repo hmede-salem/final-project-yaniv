@@ -1,0 +1,4 @@
+{
+    "jwtPrivateKey": "Muhammed",
+    "db": "mongodb://localhost/eCommerceProject"
+}
