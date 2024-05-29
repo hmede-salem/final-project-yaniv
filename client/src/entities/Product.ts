@@ -10,7 +10,7 @@ export default interface Product {
   rating: number;
   stock: number;
   brand: string;
-  category: Category|string;
+  category: Category | string;
   images: string[];
   sold: number;
   type: string;

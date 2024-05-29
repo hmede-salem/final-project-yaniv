@@ -17,8 +17,6 @@ import addProduct from "../hooks/addProduct";
 import { useSelector } from "react-redux";
 import { RootState } from "../state/store";
 import generateRatingNumbers from "../services/generateRatingOptions";
-import { ObjectId } from "mongoose";
-import Category from "../entities/Category";
 
 interface Props {
   newProduct?: boolean;
