@@ -21,12 +21,14 @@ app.post("/login", async(req, res) => {
     } else {
         const { email, password } = req.body;
         try {
-            const customer = await Customer.findOne({ email }).populate({
-                path: "cart",
-                populate: {
-                    path: "productId",
-                },
-            });
+            const customer = await Customer.findOne({ email })
+                .populate({
+                    path: "cart",
+                    populate: {
+                        path: "productId",
+                    },
+                })
+                .populate("orders");
             if (!customer) {
                 res.status(400).json({
                     success: false,
@@ -41,6 +43,7 @@ app.post("/login", async(req, res) => {
                         success: true,
                         token: token,
                         id: customer._id,
+                        orders: customer.orders,
                         firstName: customer.firstName,
                         lastName: customer.lastName,
                         email: customer.email,
@@ -134,7 +137,41 @@ app.delete("/category", async({ query: { catId } }, res) => {
         res.status(500).json({ success: false, message: err.message || err });
     }
 });
-app.put("/category", async({ body }, res) => {});
+app.post("/category", auth, async(req, res) => {
+    try {
+        const newCategory = new Category({
+            id: crypto.randomUUID(),
+            category: req.body.newCategoryName,
+        });
+        newCategory.save();
+
+        res.status(200).json({
+            success: true,
+            message: "Category Added.",
+            data: newCategory,
+        });
+    } catch (err) {
+        res.status(500).json({ success: false, message: err.message || err });
+    }
+});
+
+app.put("/category", async({ body: { newCatName, catId } }, res) => {
+    try {
+        console.log(catId, newCatName);
+        const category = await Category.findOneAndUpdate({ _id: new mongoose.Types.ObjectId(catId) }, { $set: { category: newCatName } }, { new: true });
+        // console.log(category);
+        res.status(200).json({
+            success: true,
+            message: "Category Updated.",
+            data: category,
+        });
+    } catch (err) {
+        res.status(500).json({
+            success: false,
+            message: err.message || err,
+        });
+    }
+});
 
 app.get("/products", auth, async(req, res) => {
     const {
