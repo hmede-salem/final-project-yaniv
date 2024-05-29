@@ -1,6 +1,6 @@
 import apiClient from '../services/api-client';
 
-const signUp = (data: object) => {
+const signUp = async (data: object) => {
     let endpoint = `/register`;
    return apiClient
         .post(endpoint, data)

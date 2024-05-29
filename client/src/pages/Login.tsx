@@ -14,15 +14,18 @@ import {
 } from "@chakra-ui/react";
 import signIn from "../hooks/signIn";
 import { useState, useEffect } from "react";
-import { AxiosError, AxiosResponse } from "axios";
+import { AxiosError } from "axios";
 import InfoResult from "../components/InfoResult";
+import { useDispatch } from "react-redux";
+import { setData } from "../state/cart/cartSlice";
 
 const Login = () => {
-  const [email, setEmail] = useState<String>();
-  const [password, setPassword] = useState<String>();
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
   const [info, setInfo] = useState<Boolean>(false);
   const [errMessage, setErrorMessage] = useState<string>("");
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   let data = {};
   useEffect(() => {
@@ -31,14 +34,17 @@ const Login = () => {
 
   const tryLogin = async () => {
     let res = await signIn(data);
+
     if (res instanceof AxiosError) {
       setInfo(true);
       setErrorMessage(res.response?.data.msg);
     } else {
+      localStorage.setItem("token", res.data.token);
       sessionStorage.setItem("token", `${res.data.token}`);
       sessionStorage.setItem("firstName", `${res.data.firstName}`);
       sessionStorage.setItem("lastName", `${res.data.lastName}`);
       sessionStorage.setItem("role", `${res.data.role}`);
+      dispatch(setData(res.data.cart));
       navigate("/home");
     }
   };

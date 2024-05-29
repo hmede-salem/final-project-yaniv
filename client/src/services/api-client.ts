@@ -1,8 +1,8 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: 'http://localhost:5002',
-    // headers: {
-    //     token: sessionStorage.getItem("token")
-    // }
-})
+  baseURL: "http://localhost:5002",
+  headers: {
+    Authorization: localStorage.getItem("token") || "",
+  },
+});

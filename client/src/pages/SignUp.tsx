@@ -39,7 +39,7 @@ const SignUp = () => {
   const trySignUp = async () => {
     let res = await signUp(data);
     console.log(res);
-    if (!res.data.success) {
+    if (!res.data?.success) {
       setInfo(true);
       setErrorMessage(res.response.data.msg);
     } else {

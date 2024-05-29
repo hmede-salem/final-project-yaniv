@@ -12,6 +12,20 @@ const cartSchema = new Schema({
     },
 });
 
+const orderSchema = new Schema({
+    count: {
+        type: Number,
+    },
+    productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Product",
+    },
+    orderDate: {
+        type: String,
+        default: new Date().toLocaleDateString("pt-PT"),
+    },
+});
+
 const customerSchema = new Schema({
     firstName: {
         type: String,
@@ -33,18 +47,25 @@ const customerSchema = new Schema({
         minlenght: 6,
         required: true,
     },
+    creationDate: {
+        type: String,
+        default: new Date().toLocaleDateString("pt-PT"),
+    },
     role: {
         type: String,
-        default: 'customer',
+        default: "customer",
     },
     cart: [{
         type: cartSchema,
     }, ],
+    orders: [{
+        type: orderSchema,
+    }, ],
 });
 
-// customerSchema.methods.generateAuthToken = function() {
-//     return jwt.sign({ _id: this._id }, config.get("jwtPrivateKey"));
-// };
+customerSchema.methods.generateAuthToken = function() {
+    return jwt.sign({ _id: this._id }, config.get("jwtPrivateKey"));
+};
 
 const Customer = model("Customer", customerSchema);
 

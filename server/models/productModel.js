@@ -1,8 +1,8 @@
-const { model, Schema } = require("mongoose");
+const { model, Schema, default: mongoose } = require("mongoose");
 
 const productSchema = new Schema({
     id: {
-        type: Number,
+        type: String,
         required: true,
         unique: true,
     },
@@ -16,7 +16,6 @@ const productSchema = new Schema({
     },
     details: {
         type: String,
-        required: true,
     },
     price: {
         type: Number,
@@ -39,14 +38,23 @@ const productSchema = new Schema({
         required: true,
     },
     category: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Category",
         required: true,
     },
-    image: [{
+    images: [{
         type: String,
         required: true,
         min: 1,
     }, ],
+    sold: {
+        type: Number,
+        default: 0,
+    },
+    type: {
+        type: String,
+        required: true,
+    },
 });
 
 const Product = model("Product", productSchema);
