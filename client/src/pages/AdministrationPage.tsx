@@ -25,7 +25,7 @@ const AdministrationPage = () => {
           <CustomersInfo />
         </TabPanel>
         <TabPanel>
-          {/* <Charts /> */}
+          <Charts />
         </TabPanel>
       </TabPanels>
     </Tabs>

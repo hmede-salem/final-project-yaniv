@@ -8,6 +8,7 @@ import generateRandomColors from "../services/generateColors";
 import Product from "../entities/Product";
 import useProducts from "../hooks/useProducts";
 import useCustomers from "../hooks/useCustomers";
+import { produceWithPatches } from "immer";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -55,12 +56,6 @@ const Charts = () => {
   };
 
   useEffect(() => {
-    if (products) {
-      setSoldProducts(products.filter((p) => p.sold > 0));
-    }
-  }, [products]);
-
-  useEffect(() => {
     if (soldProducts) {
       setColors(generateRandomColors(soldProducts.length));
     }
@@ -73,6 +68,7 @@ const Charts = () => {
       );
       setSelectedUser(usersWithOrders[1]);
       setUsers(usersWithOrders);
+      setSoldProducts(products.filter((p) => p.sold > 0));
     }
   }, []);
 
