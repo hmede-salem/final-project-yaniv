@@ -15,14 +15,14 @@ Global state manager: Redux.
 
 ## In order to run the project
 1 - Client side:
-    a- cd ./client.
-    b- npm install.
-    c- npm run dev
+    -> cd ./client.
+    -> npm install.
+    -> npm run dev
 
 2 - Server side:
-    a- cd ./server.
-    b- npm install.
-    c- npm run start.
+    -> cd ./server.
+    -> npm install.
+    -> npm run start.
 
 3 - DB (mongoDB):
     I've provided 3 JSON files - exported from my local database.
