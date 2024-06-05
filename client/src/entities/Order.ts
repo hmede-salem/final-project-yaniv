@@ -4,4 +4,5 @@ export default interface Order {
   count: number;
   productId: Product;
   orderDate: string;
+  id: string;
 }

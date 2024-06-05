@@ -24,6 +24,9 @@ const orderSchema = new Schema({
         type: String,
         default: new Date().toLocaleDateString("pt-PT"),
     },
+    id: {
+        type: String,
+    },
 });
 
 const customerSchema = new Schema({

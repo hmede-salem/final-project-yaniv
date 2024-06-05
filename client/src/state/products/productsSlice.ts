@@ -1,17 +1,20 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import Category, { allCategories } from "../../entities/Category";
+import Product from "../../entities/Product";
 import Range from "../../entities/Range";
 
 interface ProductFilterState {
   selectedCategory: Category;
   range: Range;
   searchText: string;
+  products: Product[];
 }
 
 const initialState: ProductFilterState = {
   selectedCategory: allCategories,
   range: { min: 0, max: 2500 },
   searchText: "",
+  products: [],
 };
 
 const productsSlice = createSlice({
@@ -31,7 +34,7 @@ const productsSlice = createSlice({
   },
 });
 
-export const { selectCategory, selectRange, selectSearch } =
+export const { selectCategory, selectRange, selectSearch, reset } =
   productsSlice.actions;
 
 export default productsSlice.reducer;

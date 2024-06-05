@@ -3,18 +3,15 @@ import {
   Menu,
   MenuButton,
   MenuDivider,
-  MenuItem,
   MenuList,
   Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 import ContactUs from "./ContactUs";
-import { useDispatch } from "react-redux";
 import { persistor, store } from "../state/store";
 
 const CustomerMenu = () => {
-  const dispatch = useDispatch();
   const firstName = sessionStorage.getItem("firstName");
   const role = sessionStorage.getItem("role");
   const navigate = useNavigate();
@@ -50,9 +47,14 @@ const CustomerMenu = () => {
             </Button>
           ) : (
             <>
-              <Button colorScheme={"gray"} w={"100%"}>
+              <Button
+                onClick={() => navigate("orderHistory")}
+                colorScheme={"gray"}
+                w={"100%"}
+              >
                 Shopping History
               </Button>
+
               <ContactUs />
             </>
           )}
@@ -61,9 +63,9 @@ const CustomerMenu = () => {
             onClick={() => {
               store.dispatch({ type: "LOGOUT" });
               persistor.purge();
-              // localStorage.clear();
+              localStorage.clear();
+              sessionStorage.clear();
               navigate("/login");
-              // sessionStorage.clear();
             }}
             colorScheme={"red"}
             w={"100%"}

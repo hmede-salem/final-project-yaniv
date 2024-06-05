@@ -11,7 +11,7 @@ import { Provider } from "react-redux";
 import { persistor, store } from "./state/store";
 import { PersistGate } from "redux-persist/integration/react";
 
-const queryClient = new QueryClient();
+export const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <ChakraProvider theme={theme}>
             <ColorModeScript initialColorMode={theme.config.initialColorMode} />
             <RouterProvider router={router} />
-            <ReactQueryDevtools />
+            {/* <ReactQueryDevtools /> */}
           </ChakraProvider>
         </PersistGate>
       </Provider>

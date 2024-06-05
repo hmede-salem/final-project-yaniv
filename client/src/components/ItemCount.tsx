@@ -8,7 +8,7 @@ import {
 import Product from "../entities/Product";
 import modifyCartItem from "../hooks/modifyCartItem";
 import { useDispatch } from "react-redux";
-import { fetchCartData, setData } from "../state/cart/cartSlice";
+import { fetchCartData } from "../state/cart/cartSlice";
 import { AppDispatch } from "../state/store";
 
 interface Props {

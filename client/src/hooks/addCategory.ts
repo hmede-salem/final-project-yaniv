@@ -1,8 +1,8 @@
 import apiClient from "../services/api-client";
 
-const addCategory = async (newCategoryName: string) => {
+const addCategory = async (newCategoryName: string, imageUrl: string) => {
   let endpoint = `/category`;
-  let data = { newCategoryName };
+  let data = { newCategoryName, imageUrl };
 
   return apiClient
     .post(endpoint, data)

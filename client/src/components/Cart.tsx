@@ -1,4 +1,4 @@
-import { Box, Divider, Grid, HStack, Spinner, Text } from "@chakra-ui/react";
+import { Box, Divider, Grid, HStack, Text } from "@chakra-ui/react";
 import ICartItem from "../entities/ICartItem";
 import CartItem from "./CartItem";
 

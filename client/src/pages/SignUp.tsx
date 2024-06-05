@@ -10,16 +10,13 @@ import {
   Stack,
   Button,
   Heading,
-  // Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
-import { Link } from "react-router-dom";
 import signUp from "../hooks/signUp";
 import SuccessResult from "../components/SuccessResult";
 import InfoResult from "../components/InfoResult";
-import { AxiosError } from "axios";
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState<Boolean>(false);

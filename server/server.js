@@ -137,29 +137,34 @@ app.delete("/category", async({ query: { catId } }, res) => {
         res.status(500).json({ success: false, message: err.message || err });
     }
 });
-app.post("/category", auth, async(req, res) => {
-    try {
-        const newCategory = new Category({
-            id: crypto.randomUUID(),
-            category: req.body.newCategoryName,
-        });
-        newCategory.save();
 
-        res.status(200).json({
-            success: true,
-            message: "Category Added.",
-            data: newCategory,
-        });
-    } catch (err) {
-        res.status(500).json({ success: false, message: err.message || err });
+app.post(
+    "/category",
+    auth,
+    async({ body: { newCategoryName, imageUrl } }, res) => {
+        try {
+            const newCategory = new Category({
+                id: crypto.randomUUID(),
+                category: newCategoryName,
+                image: imageUrl,
+            });
+            newCategory.save();
+
+            res.status(200).json({
+                success: true,
+                message: "Category Added.",
+                data: newCategory,
+            });
+        } catch (err) {
+            res.status(500).json({ success: false, message: err.message || err });
+        }
     }
-});
+);
 
-app.put("/category", async({ body: { newCatName, catId } }, res) => {
+app.put("/category", async({ body: { newCatName, catId, imageUrl } }, res) => {
     try {
         console.log(catId, newCatName);
-        const category = await Category.findOneAndUpdate({ _id: new mongoose.Types.ObjectId(catId) }, { $set: { category: newCatName } }, { new: true });
-        // console.log(category);
+        const category = await Category.findOneAndUpdate({ _id: new mongoose.Types.ObjectId(catId) }, { $set: { category: newCatName, image: imageUrl } }, { new: true });
         res.status(200).json({
             success: true,
             message: "Category Updated.",
@@ -177,7 +182,6 @@ app.get("/products", auth, async(req, res) => {
     const {
         query: { category, searchText },
     } = req;
-
     const regex = `\\b${searchText}`;
     try {
         const products = await Product.find({
@@ -187,7 +191,9 @@ app.get("/products", auth, async(req, res) => {
             path: "category",
         });
 
-        let response = products || [];
+        const validProducts = products.filter((product) => product.category.valid);
+
+        let response = validProducts || [];
 
         res.status(200).json({
             data: response,
@@ -395,6 +401,40 @@ app.delete(
     }
 );
 
+app.get("/customer/order", auth, async(req, res) => {
+    try {
+        const customer = await Customer.findById({
+            _id: req.customer._id,
+        }).populate({
+            path: "orders",
+            populate: {
+                path: "productId",
+            },
+        });
+        if (!customer) {
+            return res.status(404).json({
+                success: false,
+                msg: "Client not authenticated to receive information.",
+            });
+        } else if (customer.orders.length === 0) {
+            return res.status(200).json({
+                success: false,
+                data: [],
+                msg: "Client have no orders!",
+            });
+        }
+
+        res.status(200).json({
+            success: true,
+            data: customer.orders,
+            msg: "Customer's orders sent.",
+        });
+    } catch (err) {
+        console.log(err.message);
+        res.status(500).json({ success: false, message: err.message || err });
+    }
+});
+
 app.post("/customer/order/add", auth, async(req, res) => {
     try {
         const customer = await Customer.findById({
@@ -405,7 +445,6 @@ app.post("/customer/order/add", auth, async(req, res) => {
                 path: "productId",
             },
         });
-        // console.log(customer);
         if (!customer) {
             return res.status(404).json({
                 success: false,
@@ -418,8 +457,14 @@ app.post("/customer/order/add", auth, async(req, res) => {
             });
         }
 
+        const id = crypto.randomUUID();
+
         customer.cart.forEach(async(p) => {
-            customer.orders.push({ count: p.count, productId: p.productId });
+            customer.orders.push({
+                count: p.count,
+                productId: p.productId._id,
+                id: id,
+            });
             let product = await Product.findById(p.productId);
 
             product.stock = product.stock - p.count;
@@ -469,7 +514,6 @@ const validateProduct = function(product) {
         rating: Joi.number(),
         stock: Joi.number(),
         brand: Joi.string().required(),
-        // category: ObjectId.ObjectId().required(),
         category: Joi.string().required(),
         images: Joi.array().items(Joi.string().min(1)).required(),
         type: Joi.string().required(),

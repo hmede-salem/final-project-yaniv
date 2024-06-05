@@ -1,4 +1,4 @@
-import { Badge, Button } from "@chakra-ui/react";
+import { Badge, Button, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import Product from "../entities/Product";
@@ -7,9 +7,10 @@ import { setData } from "../state/cart/cartSlice";
 
 interface Props {
   product: Product;
+  inDiscount: boolean;
 }
 
-const PriceBadge = ({ product }: Props) => {
+const PriceBadge = ({ product, inDiscount }: Props) => {
   const dispatch = useDispatch();
 
   const handleModifyItem = async (implementation: string) => {
@@ -19,10 +20,13 @@ const PriceBadge = ({ product }: Props) => {
     }
   };
   const [mouseover, setMouseover] = useState(false);
+  const role = sessionStorage.getItem("role");
   return (
     <Badge
       colorScheme={"blue"}
-      style={{ display: "flex" }}
+      style={{
+        display: "flex",
+      }}
       fontSize="20px"
       paddingX={3}
       marginY={1}
@@ -30,8 +34,17 @@ const PriceBadge = ({ product }: Props) => {
       onMouseOver={() => setMouseover(true)}
       onMouseLeave={() => setMouseover(false)}
     >
-      $ {product.price}
-      {mouseover && (
+      <Text
+        as={"span"}
+        style={{
+          textDecoration: inDiscount ? "line-through" : "none",
+          textDecorationColor: "red",
+          textDecorationThickness: "0.25rem",
+        }}
+      >
+        $ {product.price}
+      </Text>
+      {mouseover && role ==="customer" && (
         <Button
           style={{ margin: "auto", marginLeft: "10px" }}
           colorScheme="cyan"

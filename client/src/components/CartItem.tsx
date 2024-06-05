@@ -12,7 +12,7 @@ import Product from "../entities/Product";
 import Price from "./Price";
 import ItemCount from "./ItemCount";
 import { useDispatch } from "react-redux";
-import { fetchCartData, setData } from "../state/cart/cartSlice";
+import { fetchCartData } from "../state/cart/cartSlice";
 import deleteCartItem from "../hooks/deleteCartItem";
 import { AppDispatch } from "../state/store";
 

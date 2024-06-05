@@ -5,6 +5,7 @@ import { useState } from "react";
 import Product from "../entities/Product";
 import { Link, useNavigate } from "react-router-dom";
 import saleLogo from "../assets/sale-tag.webp";
+import productsSlice from "../state/products/productsSlice";
 
 interface Props {
   product: Product;
@@ -44,7 +45,10 @@ const ProductCard = ({ product }: Props) => {
           <Heading fontSize={"xl"}>{product.title}</Heading>
         </Link>
         <HStack justifyContent={"space-between"}>
-          <PriceBadge product={product} />
+          <PriceBadge
+            product={product}
+            inDiscount={product.discountPercentage > 0 ? true : false}
+          />
           <RatingBadge rating={product.rating} />
         </HStack>
       </CardBody>

@@ -66,6 +66,7 @@ const ContactUs = () => {
                         color="#DCE2FF"
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdPhone color="#1970F1" size="20px" />}
+                        onClick={() => window.location.href = `tel:+972549321997`}
                       >
                         +972-549321997
                       </Button>
@@ -78,6 +79,7 @@ const ContactUs = () => {
                         color="#DCE2FF"
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}
+                        onClick={() => window.location.href = `mailto:hmede3310@hotmail.com`}
                       >
                         hmede3310@hotmail.com
                       </Button>
@@ -90,6 +92,11 @@ const ContactUs = () => {
                         color="#DCE2FF"
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
+                        onClick={() =>
+                          window.open(
+                            "https://maps.app.goo.gl/bPFFMJLZ1qxxhRMF6"
+                          )
+                        }
                       >
                         Haifa, Israel
                       </Button>

@@ -2,20 +2,19 @@ import {
   Badge,
   Button,
   HStack,
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalHeader,
-  ModalOverlay,
+  Drawer,
+  DrawerBody,
+  DrawerContent,
+  DrawerHeader,
+  DrawerFooter,
+  DrawerOverlay,
   useDisclosure,
 } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
 import { TbShoppingBag } from "react-icons/tb";
-// import useCart from "../hooks/useCart";
 import Cart from "./Cart";
 import { useNavigate } from "react-router-dom";
-import {  useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { RootState } from "../state/store";
 
 const CartLogo = () => {
@@ -38,7 +37,7 @@ const CartLogo = () => {
       >
         <HStack>
           <Icon as={TbShoppingBag} boxSize={"25px"} />
-          {cart.length && (
+          {cart.length > 0 && (
             <Badge
               border={"1px"}
               borderRadius={10}
@@ -52,14 +51,16 @@ const CartLogo = () => {
           )}
         </HStack>
       </Button>
-      <Modal isOpen={isOpen} onClose={onClose} size={"3xl"}>
-        <ModalOverlay backdropFilter="blur(7px)" />
-        <ModalContent margin={2}>
-          <ModalHeader fontSize={30}>
+      <Drawer isOpen={isOpen} onClose={onClose} size={"lg"} placement="right">
+        <DrawerOverlay backdropFilter="blur(7px)" />
+        <DrawerContent margin={2}>
+          <DrawerHeader fontSize={30}>
             {cart.length > 0 ? "Your Cart:" : "Your cart is empty."}
-          </ModalHeader>
-          <ModalBody>{cart.length > 0 ? <Cart cart={cart} /> : null}</ModalBody>
-          <ModalFooter>
+          </DrawerHeader>
+          <DrawerBody>
+            {cart.length > 0 ? <Cart cart={cart} /> : null}
+          </DrawerBody>
+          <DrawerFooter>
             <Button
               colorScheme="black"
               variant={"ghost"}
@@ -78,9 +79,9 @@ const CartLogo = () => {
             >
               Checkout
             </Button>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
     </>
   );
 };

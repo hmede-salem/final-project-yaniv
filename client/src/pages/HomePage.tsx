@@ -1,9 +1,26 @@
-import { Grid, GridItem, Show } from "@chakra-ui/react";
+import {
+  Grid,
+  GridItem,
+  Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  DrawerHeader,
+  DrawerBody,
+  IconButton,
+  useDisclosure,
+  useBreakpointValue,
+  Button,
+} from "@chakra-ui/react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 import CategoriesList from "../components/CategoriesList";
 import PriceRange from "../components/PriceRange";
 import ProductsGrid from "../components/ProductsGrid";
 
 const HomePage = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const isMobile = useBreakpointValue({ base: true, lg: false });
+
   return (
     <Grid
       templateAreas={{
@@ -15,16 +32,44 @@ const HomePage = () => {
         lg: "230px 1fr",
       }}
     >
-      <Show above="lg">
+      <GridItem area="main">
+        <ProductsGrid />
+      </GridItem>
+      {isMobile ? (
+        <>
+          <Button
+            aria-label="Menu"
+            onClick={onOpen}
+            position="fixed"
+            bottom={4}
+            right={4}
+            zIndex={10}
+            bg="blue.500"
+            boxShadow="lg"
+            size="lg"
+            color="white"
+          >
+            Filter Products
+          </Button>
+          <Drawer placement="top" isOpen={isOpen} onClose={onClose}>
+            <DrawerOverlay />
+            <DrawerContent>
+              <DrawerCloseButton />
+              <DrawerHeader>Filter Options</DrawerHeader>
+              <DrawerBody>
+                <CategoriesList />
+                <PriceRange />
+              </DrawerBody>
+            </DrawerContent>
+          </Drawer>
+        </>
+      ) : (
         <GridItem area="aside" paddingX={5}>
           <CategoriesList />
           &nbsp;
           <PriceRange />
         </GridItem>
-      </Show>
-      <GridItem area="main">
-        <ProductsGrid />
-      </GridItem>
+      )}
     </Grid>
   );
 };
