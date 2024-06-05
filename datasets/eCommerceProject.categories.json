@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6520370690f0925b69610898"
+  },
+  "category": "Jewelery",
+  "image": "https://img.icons8.com/?size=80&id=zFU0VHxFROei&format=png",
+  "valid": true,
+  "id": "932b9cd1-ebbc-409e-a7ec-fdd3c92af4d2"
+},
+{
+  "_id": {
+    "$oid": "6520370690f0925b69610899"
+  },
+  "category": "Men's Clothing",
+  "image": "https://img.icons8.com/?size=48&id=16594&format=png",
+  "valid": true,
+  "id": "a4d7bbfe-1023-473c-8d17-e27cdaf09e9d"
+},
+{
+  "_id": {
+    "$oid": "6520370690f0925b6961089a"
+  },
+  "category": "Women's Clothing",
+  "image": "https://img.icons8.com/?size=48&id=59495&format=png",
+  "valid": true,
+  "id": "48b036d3-fe8d-4eeb-9716-4ef37e0e477c"
+},
+{
+  "_id": {
+    "$oid": "652243fb90f0925b696108a1"
+  },
+  "category": "Electronics",
+  "image": "https://img.icons8.com/?size=48&id=Jv5tqG1ptC4b&format=png",
+  "valid": true,
+  "id": "42ad0654-f770-4eb5-beb7-a966f2bedef7"
+}]

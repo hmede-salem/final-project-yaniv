@@ -1,0 +1,496 @@
+[{
+  "_id": {
+    "$oid": "6524434d90f0925b696108ab"
+  },
+  "id": "dcf0da29-dbe6-48d3-b814-5aac815669ed",
+  "title": "Mens khaki & black check brushed shacket",
+  "description": "Update your wardrobe with this stylish khaki, black & white checked shacket. Crafted from a check brushed fabric, it's classic and simple with versatile features that make it easy to style. Featuring chest pockets, a button down front and a smart collar, this shirt looks great styled open with t-shirts.",
+  "details": "Polyester 100%, Machine Washable.",
+  "price": 55,
+  "discountPercentage": 25,
+  "rating": 4.7,
+  "stock": 79,
+  "brand": "Mok",
+  "category": {
+    "$oid": "6520370690f0925b69610899"
+  },
+  "images": [
+    "https://peacocks.imgix.net/media/imagery/2/0/3/2/5/4_2ef3a74dd5c285b/203254pvs_68b30df89114d79.jpg",
+    "https://www.peacocks.co.uk/dw/image/v2/BKQD_PRD/on/demandware.static/-/Sites-pck-uk-master-catalog/default/dw397e6350/Assets/4503480_E03_base_01/hi-res/0/9/6/5/096536dc8cd3175397a968081cc2f2f9b135c53b_4503480_E03_base_01.jpg?sw=462&sh=700&sm=fit",
+    "https://www.peacocks.co.uk/dw/image/v2/BKQD_PRD/on/demandware.static/-/Sites-pck-uk-master-catalog/default/dw70b31117/Assets/4503480_E03_rollover_2/rollover/b/f/f/4/bff41e06153aef1bc62c5de6ddcbb4ec1e04d52b_4503480_E03_rollover_2.jpg?sw=462&sh=700&sm=fit"
+  ],
+  "sold": 11,
+  "type": "Shacket"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108ac"
+  },
+  "id": "8ad56731-5b91-4299-a68e-d4a914b3ad77",
+  "title": "Mens navy & white baseball jacket ",
+  "description": "Elevate your outerwear collection this season with this on trend baseball jacket. Crafted in navy fabric with white accents, this regular fit jacket is nod to those retro inspired varsity jackets.",
+  "details": "Polyester 64% Wool 14% Viscose 9% Acrylic 8% Polyamide 4% Cotton 1% Machine Washable ",
+  "price": 45,
+  "discountPercentage": 20,
+  "rating": 4.8,
+  "stock": 64,
+  "brand": "Mok",
+  "category": {
+    "$oid": "6520370690f0925b69610899"
+  },
+  "images": [
+    "https://peacocks.imgix.net/media/imagery/1/8/4/9/6/6_4d76ef428e17253/184966pvs_2d397ea77a64404.jpg",
+    "https://peacocks.imgix.net/media/imagery/2/0/7/8/3/1_8d2c037d14003f7/207831pvs_2b18d2f52ca666e.jpg",
+    "https://i5.walmartimages.com/asr/a09f1f35-1da4-49f6-830e-dd1c21dd5190.acfd95137439cc6143ec140b03f68a2e.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+    "https://peacocks.imgix.net/media/imagery/1/8/4/9/9/0_c651ac03fcf7743/184990pvs_9c18326be043f42.jpg"
+  ],
+  "sold": 15,
+  "type": "Jacket"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108ad"
+  },
+  "id": "04ab242d-22c7-4787-834b-0cba5728fcca",
+  "title": "iPhone 14 Pro Max",
+  "description": "The iPhone 14 Pro comes with 6.1-inch OLED display with 120Hz refresh rate and Apple's improved Bionic A16 processor. On the back there is a Triple camera setup with 48MP main camera.",
+  "details": "",
+  "price": 999,
+  "discountPercentage": 12,
+  "rating": 4.7,
+  "stock": 17,
+  "brand": "Apple",
+  "category": {
+    "$oid": "652243fb90f0925b696108a1"
+  },
+  "images": [
+    "https://img.zap.co.il/pics/3/4/7/8/74188743c.gif",
+    "https://ss7.vzw.com/is/image/VerizonWireless/iphone-14-pro-hero_small_2x?fmt=webp-alpha&scl=1",
+    "https://shekem-df.co.il/media/catalog/product/cache/6b2f4d2b8c238597c4864fc429fa65dd/2/9/292975_1.jpg",
+    "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-deep-purple-220907_inline.jpg.large.jpg"
+  ],
+  "sold": 23,
+  "type": "Mobile"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108ae"
+  },
+  "id": "42b61a68-fc96-4b03-8344-516e5c9b6fc5",
+  "title": "Samsung Fold",
+  "description": " 4.6-inch display in the center designed for one-handed use, and the device can fold open to expose a 7.3-inch display.",
+  "details": "Folded mobile with a two screens",
+  "price": 1799,
+  "discountPercentage": 0,
+  "rating": 4.1,
+  "stock": 15,
+  "brand": "Samsung",
+  "category": {
+    "$oid": "652243fb90f0925b696108a1"
+  },
+  "images": [
+    "https://cdn.dxomark.com/wp-content/uploads/medias/post-63759/samsung_galaxy_z-fold2-1.jpg",
+    "https://images.samsung.com/my/smartphones/galaxy-z-fold4/buy/Fold4_Carousel_GroupKV_PC.jpg",
+    "https://images.samsung.com/my/smartphones/galaxy-z-fold4/buy/Fold4_Carousel_ProductKV_GrayGreen_PC.jpg",
+    "https://images.samsung.com/my/smartphones/galaxy-z-fold4/buy/Fold4_Carousel_ProductKV_PhantomBlack_PC.jpg"
+  ],
+  "sold": 5,
+  "type": "Mobile"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108af"
+  },
+  "id": "c085b3bd-cf3a-4799-8715-d92c1ad20163",
+  "title": "Huawei P30",
+  "description": "The Huawei P30 is a high-end Android phone powered by Huawei's Kirin 980 chip, backed by up to 8GB of RAM and 128GB of storage. A key selling point is the triple camera at the back, comprised of a main, 40MP camera promising great low-light shots, a super wide-angle camera, and a telephoto camera with 3x zoom. The 6.1-inch OLED screen stretches from one corner to the other and is only interrupted by a small notch housing the front, 32MP camera. The 3650mAh battery charges rapidly and supports reverse wireless charging.",
+  "details": "This device is also known as Huawei ELE-L09",
+  "price": 499,
+  "discountPercentage": 10,
+  "rating": 3.8,
+  "stock": 29,
+  "brand": "Huawei",
+  "category": {
+    "$oid": "652243fb90f0925b696108a1"
+  },
+  "images": [
+    "https://img.gkbcdn.com/s3/p/2019-03-27/huawei-p30-pro-6-47-inch-8gb-256gb-smartphone-black-1574132270692.jpg",
+    "https://d3m9l0v76dty0.cloudfront.net/system/photos/12665516/large/71780545927f3eb469f00e09b005cfc8.jpg",
+    "https://m.media-amazon.com/images/I/61jJeZBliWL._AC_UF1000,1000_QL80_DpWeblab_.jpg",
+    "https://i.itworldcanada.com/wp-content/uploads/2019/07/huawei-p30-lite-edited.jpg"
+  ],
+  "sold": 3,
+  "type": "Mobile"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108b0"
+  },
+  "id": "3ab1b0a9-879c-4565-b218-d1137d679f05",
+  "title": "Mens tan suedette fleece collar jacket",
+  "description": "Update your casual wardrobe with this men's jacket in tan. Features long sleeves, a cream borg collar neckline, and a zip up front. In a thick suedette fabric and lined in fleece, this double pocket jacket will make a great addition to your new season wardrobe.",
+  "details": "Polyester 100%",
+  "price": 60,
+  "discountPercentage": 0,
+  "rating": 4.4,
+  "stock": 78,
+  "brand": "Mok",
+  "category": {
+    "$oid": "6520370690f0925b69610899"
+  },
+  "images": [
+    "https://peacocks.imgix.net/media/imagery/2/0/3/4/7/7_4d3edabfef5d47f/203477pvs_a069ae6fb1012ba.jpg",
+    "https://peacocks.imgix.net/media/imagery/2/0/2/4/9/0_d727c53629f4a2f/202490pvs_ca96cadc0db4a4a.jpg",
+    "https://peacocks.imgix.net/media/imagery/2/0/2/5/6/2_f99be829c156bd5/202562pvs_34764817a697d70.jpg",
+    "https://peacocks.imgix.net/media/imagery/2/0/2/4/8/2_08a90955b249aa8/202482pvs_42a608681b9497c.jpg"
+  ],
+  "sold": 5,
+  "type": "Jacket"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108b1"
+  },
+  "id": "e253f92e-94ee-4999-8cde-87b48306970f",
+  "title": "Samsung Galaxy s23 ultra",
+  "description": "The Samsung Galaxy S23 Ultra is the headliner of the S23 series. Specifications are top-notch including 6.8-inch Dynamic AMOLED display with 120Hz refresh rate, Snapdragon 8 Gen 2 processor, 5000mAh battery, up to 12gigs of RAM, and 1TB of storage.",
+  "details": "",
+  "price": 1499,
+  "discountPercentage": 5,
+  "rating": 4.3,
+  "stock": 44,
+  "brand": "Samsung",
+  "category": {
+    "$oid": "652243fb90f0925b696108a1"
+  },
+  "images": [
+    "https://images.samsung.com/my/smartphones/galaxy-s23-ultra/buy/product_color_green.png",
+    "https://images.samsung.com/is/image/samsung/assets/in/smartphones/galaxy-s23/buy/720X720_1.jpg",
+    "https://images.samsung.com/ca/smartphones/galaxy-s23-ultra/images/galaxy-s23-ultra-highlights-design-end-s.jpg",
+    "https://images.samsung.com/is/image/samsung/assets/sg/smartphones/galaxy-s23-ultra/images/galaxy-s23-ultra-highlights-spen-s.jpg"
+  ],
+  "sold": 6,
+  "type": "Mobile"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108b2"
+  },
+  "id": "5ffcf035-e0f3-4a31-909f-cb2261692dfd",
+  "title": "Womens Blue Longline Check Shirt",
+  "description": "Update your new season wardrobe with this lovely womens long line shirt, in light blue, navy, and black check. In a rich cotton blend, it is pleasant to touch and comfortable to wear. It also features long sleeves, a collar neckline and a longer than average length.",
+  "details": "",
+  "price": 22,
+  "discountPercentage": 0,
+  "rating": 4.4,
+  "stock": 59,
+  "brand": "Hola",
+  "category": {
+    "$oid": "6520370690f0925b6961089a"
+  },
+  "images": [
+    "https://peacocks.imgix.net/media/imagery/1/9/8/9/4/1_3b11504ad35f3ce/198941pvs_730d57c7b3e5ecd.jpg",
+    "https://peacocks.imgix.net/media/imagery/2/0/7/1/5/8_1451146ce1f38e0/207158pvs_0f587faf24f5a70.jpg",
+    "https://peacocks.imgix.net/media/imagery/1/9/8/9/4/4_75028257a8a5ddb/198944pvs_371d410f85988b2.jpg",
+    "https://www.peacocks.co.uk/dw/image/v2/BKQD_PRD/on/demandware.static/-/Sites-pck-uk-master-catalog/default/dw5fe0d6a5/Assets/4405218_C03_base_08/hi-res/9/f/8/0/9f80ebfc16044cba01c3fe17c8f342258c17e54a_4405218_C03_base_08.jpg?sw=462&sh=700&sm=fit"
+  ],
+  "sold": 1,
+  "type": "Shirt"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108b3"
+  },
+  "id": "1489cc85-140d-4d66-9a03-2bb595c71916",
+  "title": "Womens grey chicago sweatshirt",
+  "description": "This stylish womens sweatshirt in grey is the perfect casual piece for everyday wear. Featuring a crew neckline, long sleeves, and a Chicago slogan - this versatile jumper is a new season must - have!",
+  "details": "Polyester 65%, Cotton 35% Machine Washable.",
+  "price": 30,
+  "discountPercentage": 10,
+  "rating": 4.5,
+  "stock": 19,
+  "brand": "Hola",
+  "category": {
+    "$oid": "6520370690f0925b6961089a"
+  },
+  "images": [
+    "https://peacocks.imgix.net/media/imagery/2/0/3/2/2/1_92dcfda4964649f/203221pvs_4263b103db52b58.jpg",
+    "https://peacocks.imgix.net/media/imagery/2/0/7/1/6/6_36f9cf6d5afade6/207166pvs_5fb91a9accb50ad.jpg",
+    "https://www.peacocks.co.uk/dw/image/v2/BKQD_PRD/on/demandware.static/-/Sites-pck-uk-master-catalog/default/dw55757862/Assets/4504508_F01_base_98/hi-res/4/4/d/b/44db453b4743becbc84cb43b61cd631dc6b950af_4504508_F01_base_98.jpg?sw=462&sh=700&sm=fit",
+    "https://peacocks.imgix.net/media/imagery/2/0/4/4/6/9_6e1316b9e920594/204469pvs_8a3103f071d5bbd.jpg"
+  ],
+  "sold": 1,
+  "type": "Sweatshirt"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108b4"
+  },
+  "id": "4230f3c6-3fcb-4278-a5cc-17ed57a88330",
+  "title": "Womens plain black roll neck jumper",
+  "description": "Update your collection of wardrobe essentials with this versatile top. In a plain black knitted fabric with long sleeves and a roll neckline, wear with your favourite jeans for an effortless look.",
+  "details": "Viscose 80%, Nylon 20%Machine Washable.",
+  "price": 20,
+  "discountPercentage": 0,
+  "rating": 4.5,
+  "stock": 17,
+  "brand": "Hola",
+  "category": {
+    "$oid": "6520370690f0925b6961089a"
+  },
+  "images": [
+    "https://peacocks.imgix.net/media/imagery/1/9/6/3/4/5_0ff78c941ef518b/196345pvs_32f1d186aa58051.jpg",
+    "https://peacocks.imgix.net/media/imagery/2/0/7/1/8/3_97e7c225d160c05/207183pvs_37ecb13553cb453.jpg",
+    "https://peacocks.imgix.net/media/imagery/1/9/6/3/2/7_05d93ed86db539e/196327pvs_8e8df87af4845a7.jpg"
+  ],
+  "sold": 3,
+  "type": "Shirt"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108b5"
+  },
+  "id": "dc855356-5f84-4429-8a11-e8512bfb4a29",
+  "title": "Boyfriend bold chain necklace",
+  "description": "Your boyfriend denim just found its match. It’s handcrafted in 14k solid gold. Raw, loose, and bold. Wear it every day – whenever, wherever.",
+  "details": "Made in 14k solid gold, the alloy gives our pieces its beautiful, subtle hue. Length: 18 inches.Link length: 6 mm. Link width: 2.1 mm. Link thickness: 0.4 mm. ",
+  "price": 399,
+  "discountPercentage": 5,
+  "rating": 4.8,
+  "stock": 27,
+  "brand": "Miki",
+  "category": {
+    "$oid": "6520370690f0925b69610898"
+  },
+  "images": [
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/22708/original/BoyfriendBold_Necklace_yg_Hero-0076.jpg?1635967018",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/30325/original/1-BoyfriendBoldChainNecklace-YG-OnFigure-Stack-007-2.jpg?1695931041",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/22711/original/BoyfriendBold_Necklace_yg_alt1-0253.jpg?1635967023",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/30326/original/2-BoyfriendBoldChainNecklace-YG-OnFigure-Stack-029.jpg?1695931056"
+  ],
+  "sold": 3,
+  "type": "Necklace"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108b6"
+  },
+  "id": "119bd777-672e-40b3-a8ed-fe0f6205d24e",
+  "title": "Baby box chain necklace",
+  "description": "For those who’ve got a taste for the finer things in life, this will come in handy. A classic box chain that’s light as air and catches the light just right.",
+  "details": "Made in 14k solid gold, the alloy that gives our pieces its beautiful, subtle hue. Adjustable chain length from 16 to 18 inches.",
+  "price": 199,
+  "discountPercentage": 0,
+  "rating": 4,
+  "stock": 11,
+  "brand": "Miki",
+  "category": {
+    "$oid": "6520370690f0925b69610898"
+  },
+  "images": [
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/22745/original/BabyBoxChain_Necklace_yg_hero-0328.jpg?1636477979",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/27842/original/2-ZodiacRelaunch_ZodiacNecklaceGemini_V_Stack_007.jpg?1673643025",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/22748/original/BabyBoxChain_Necklace_yg_alt1-0247.jpg?1636477985",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/27841/original/1-BeadedCushionGemstonePendant_White_yg_Medium_SOLO_0380.jpg?1673643006"
+  ],
+  "sold": 4,
+  "type": "Necklace"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108b7"
+  },
+  "id": "78beb50d-7674-4c06-83de-287f096c8420",
+  "title": "Pavé Diamond Huggie Hoops",
+  "description": "Loved our Diamonds Line Mini Hoops? Look no further than these outfit-elevating, mood-boosting, can't-go-wrong hoops. Upgrade your eardrobe with this diamond piece that is handcrafted in recycled 14k solid gold. Plus, this versatile style was designed to be worn two ways—stack with pavé diamonds or flip it for a sleek 14k finish.",
+  "details": "Made in 14k solid gold set with 22 high-quality single cut diamonds. We only use Kimberley Process compliant diamonds. Diamond size: 0.80 - 0.85 mm.",
+  "price": 269,
+  "discountPercentage": 10,
+  "rating": 4.5,
+  "stock": 9,
+  "brand": "Fog",
+  "category": {
+    "$oid": "6520370690f0925b69610898"
+  },
+  "images": [
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/23749/original/0_Pave_Hoops_12mm_FrontAngled.jpg?1645719267",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/23750/original/1_Mejuri_MarchDropsv_Pave_Hoops_12mm_Solo_4188.jpg?1645719277",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/23753/original/4_Pave_Hoops_12mm_Clasp.jpg?1645719307",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/23751/original/2_Mejuri_MarchDrops__03_Pave_Hoops_12mm_Stack_2776.jpg?1645719288"
+  ],
+  "sold": 1,
+  "type": "Hoop earrings"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108b8"
+  },
+  "id": "f876ed20-1ea7-4582-a0dd-11e6d425cd4a",
+  "title": "Round Topaz Hoops",
+  "description": "You are right, this is the perfect gift. Get them a fresh, clear-cut statement piece that goes with everything they own. Handcrafted in 18k gold vermeil, set with round cut topaz gemstones.",
+  "details": "Diameter: 15.40 mm Width: 2.20 mm Stone Size: 3.5 mm ",
+  "price": 99,
+  "discountPercentage": 10,
+  "rating": 4.2,
+  "stock": 48,
+  "brand": "Fog",
+  "category": {
+    "$oid": "6520370690f0925b69610898"
+  },
+  "images": [
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/24046/original/0_Round_Cut_Topaz_Studs.jpg?1646762818",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/24048/original/2_Round_Cut_Topaz_Studs.jpg?1646762842",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/24049/original/3_Round_Cut_Topaz_Studs.jpg?1646762852",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/24047/original/1_Round_Cut_Topaz_Studs.jpg?1646762831"
+  ],
+  "sold": 2,
+  "type": "Hoop earrings"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108b9"
+  },
+  "id": "fab45563-54e7-410f-9699-b21113a8acc9",
+  "title": "Black onyx square signet ring",
+  "description": "Black and gold—a natural fit. Handcrafted in 14k solid yellow gold and black onyx.",
+  "details": "Made in 14k solid gold, the alloy gives our pieces its beautiful, subtle hue. Set with AAA quality black onyx stone. Stone size: 7.5 mm x7 .5 mm.",
+  "price": 599,
+  "discountPercentage": 5,
+  "rating": 4.7,
+  "stock": 14,
+  "brand": "Lord",
+  "category": {
+    "$oid": "6520370690f0925b69610898"
+  },
+  "images": [
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/17243/original/mens_ring_onyxsquaresignet_yg_front.jpg?1605822719",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/15105/original/Mens_BlackOnyx_2.jpg?1601478419",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/20183/original/Mens_ring_onyxsquaresignet_yg_angle.jpg?1622658644",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/15107/original/Mens_BlackOnyx_5.jpg?1601478466"
+  ],
+  "sold": 1,
+  "type": "Ring"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108ba"
+  },
+  "id": "18ec03e9-d559-4544-b6f4-a89120b76434",
+  "title": "Oval gemstone signet ring",
+  "description": "This signet's about to be your new signature. It's an approachable power move, handcrafted in sterling silver.",
+  "details": "This signet's about to be your new signature. It's an approachable power move, handcrafted in sterling silver.",
+  "price": 149,
+  "discountPercentage": 10,
+  "rating": 4.3,
+  "stock": 15,
+  "brand": "Lord",
+  "category": {
+    "$oid": "6520370690f0925b69610898"
+  },
+  "images": [
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/28588/original/0-MENSOVALGEMSTONEINLAYSIGNETRINGS_SilverBlackOnyxOvalSignet_SS_Angled_185.jpg?1676561124",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/28590/original/2-MENSOVALGEMSTONEINLAYSIGNETRINGS_BlackOnyxOvalSignetRing_SS_Solo_025.jpg?1676561153",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/28591/original/3-MENSOVALGEMSTONEINLAYSIGNETRINGS_SilverBlackOnyxOvalSignet_SS_Front_102.jpg?1676561165",
+    "https://static.mejuri.com/mejuri-com/image/fetch/c_scale,f_auto,q_60,w_1500/https://static.mejuri.com/legacy-front/production/system/spree/products/28589/original/1-MENSOVALGEMSTONEINLAYSIGNETRINGS_BlackOnyxOvalSignetRing_SS_Stack_015.jpg?1676561138"
+  ],
+  "sold": 0,
+  "type": "Ring"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108bb"
+  },
+  "id": "472042f4-59a9-4b8e-9816-98a789e319ee",
+  "title": "Macbook Pro M1",
+  "description": "Apple MacBook Pro is a macOS laptop with a 16-inch display that has a resolution of 2560x1600 pixels. It is powered by a M1 processor and it comes with 16GB of RAM. The Apple MacBook Pro packs 512GB of SSD storage.",
+  "details": "Height 1.55 cm (0.61 inch), Width: 31.26 cm (12.31 inches), Depth: 22.12 cm (8.71 inches), Weight (M1 Pro): 1.60 kg",
+  "price": 2499,
+  "discountPercentage": 5,
+  "rating": 4.9,
+  "stock": 28,
+  "brand": "Apple",
+  "category": {
+    "$oid": "652243fb90f0925b696108a1"
+  },
+  "images": [
+    "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-mbp16-space-m1-2021?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1643239951000",
+    "https://m.media-amazon.com/images/I/61Y30DpqRVL._AC_UF1000,1000_QL80_.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1mlqggB5mnfKfiNSDODOf0gQ3JZb9UfhGg&usqp=CAU",
+    "https://images.wsj.net/im-419241?width=1280&size=1"
+  ],
+  "sold": 2,
+  "type": "Laptop"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108bc"
+  },
+  "id": "9a61d2c2-781e-4489-9b37-0dc0421f48ba",
+  "title": "Western Digital 2TB elements portable SSD",
+  "description": "Lightweight and shock resistant, WD Green SSDs use no moving parts and help keep your data safe from loss in the case of accidental bumps and drops. Less Power. More Play. WD Green SSDs are among the lowest power consuming drives in the industry. ",
+  "details": "Digital Storage Capacity 2TB, Connectivity Technology USB",
+  "price": 69,
+  "discountPercentage": 10,
+  "rating": 4.5,
+  "stock": 50,
+  "brand": "Western Digital",
+  "category": {
+    "$oid": "652243fb90f0925b696108a1"
+  },
+  "images": [
+    "https://m.media-amazon.com/images/I/91mlqrT75WL.jpg",
+    "https://5.imimg.com/data5/OE/US/DZ/SELLER-9611367/sandisk-1-tb-wd-elements-portable-ssd-500x500.png",
+    "https://wisetech.co.il/wp-content/uploads/2020/08/81fBBDDTEqL._AC_SL1500_.jpg",
+    "https://media.croma.com/image/upload/v1634897654/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/240761_1_gzvrq7.png"
+  ],
+  "sold": 0,
+  "type": "Portable SSD"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108bd"
+  },
+  "id": "49f810c8-cc8b-492a-a4b9-d27caa76eeda",
+  "title": "Womens navy & cream abstract stripe shirt",
+  "description": "Add this pretty shirt to your new season wardrobe. In navy with a cream linear print design, this lovely light weight shirt features long sleeves, a hidden button panel and a flattering longer length. Pair it with jeans for a casual look.",
+  "details": "Polyester 100 %, Machine Washable.",
+  "price": 25,
+  "discountPercentage": 0,
+  "rating": 4,
+  "stock": 25,
+  "brand": "Hola",
+  "category": {
+    "$oid": "6520370690f0925b6961089a"
+  },
+  "images": [
+    "https://peacocks.imgix.net/media/imagery/2/0/2/7/7/1_aeae6d8f1c2d2d6/202771pvs_2d2aa4de3aea469.jpg",
+    "https://peacocks.imgix.net/media/imagery/2/0/2/6/7/0_37fc02adb024845/202670pvs_ed07dcead7c8b30.jpg",
+    "https://peacocks.imgix.net/media/imagery/2/0/2/6/7/0_37fc02adb024845/202670pvs_ed07dcead7c8b30.jpg"
+  ],
+  "sold": 0,
+  "type": "Shirt"
+},
+{
+  "_id": {
+    "$oid": "6524434d90f0925b696108be"
+  },
+  "id": "324330d4-c190-4ef4-9a83-9d5e091ff92a",
+  "title": "Mens navy hybrid jacket",
+  "description": "Stay warm whatever the season in this hybrid jacket. In navy featuring a zip-through front, this long sleeved lightweight padded jacket features soft jersey sleeves, handy zipped pockets and a tartan lining.",
+  "price": 50,
+  "discountPercentage": 10,
+  "rating": 4.3,
+  "stock": 10,
+  "brand": "Mok",
+  "category": {
+    "$oid": "6520370690f0925b69610899"
+  },
+  "images": [
+    "https://peacocks.imgix.net/media/imagery/2/0/4/2/7/1_f38ff0f1c997b82/204271pvs_b4655fc7b12a3de.jpg",
+    "https://peacocks.imgix.net/media/imagery/2/0/5/8/1/1_f2e3366c9fb7295/205811pvs_f9b3e06993df02d.jpg",
+    "https://peacocks.imgix.net/media/imagery/2/0/4/2/7/2_9ac7eadce4bfda4/204272pvs_cce3c9a7ba08540.jpg",
+    "https://peacocks.imgix.net/media/imagery/2/0/5/8/7/6_923c1cf807eac73/205876pvs_07d25958f462120.jpg"
+  ],
+  "sold": 0,
+  "type": "Jacket"
+}]

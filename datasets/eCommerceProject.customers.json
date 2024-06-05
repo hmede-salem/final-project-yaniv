@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "6640b341f28c2ef6c8a896c5"
+  },
+  "firstName": "מוחמד",
+  "lastName": "סאלם",
+  "email": "hmede@gmail.com",
+  "password": "$2b$10$TZi1YaSheltpiVcJR5iTwOD2My3xhNIPhD7eQiUQyOptI.ClNPnym",
+  "role": "admin",
+  "cart": [
+    {
+      "count": 2,
+      "productId": {
+        "$oid": "6524434d90f0925b696108ae"
+      },
+      "_id": {
+        "$oid": "665e7d4c28280ac98c6dc5fe"
+      }
+    }
+  ],
+  "__v": 32,
+  "creationDate": "19/05/2024",
+  "orders": []
+}]

@@ -27,6 +27,8 @@ Global state manager: Redux.
 3 - DB (mongoDB):
     I've provided 3 JSON files - exported from my local database.
     Feel free to import them localy in order to have initial data to start with.
+    the files are located under ./datasets folder.
+
 
 ### Developed by Mohammad Salem (Hmede).
 
